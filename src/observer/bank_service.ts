@@ -23,7 +23,7 @@ export class MoneyService implements BankServicer {
   private _observerList = new Set<Observer>()
 
   static getAccountInfomation(owner: string): MoneyService {
-    const bankAccounts: Array<AccountModel> = JSON.parse(readFileSync(resolve('../data/bank_accounts.json')).toString())
+    const bankAccounts: Array<AccountModel> = JSON.parse(readFileSync(resolve('./data/bank_accounts.json')).toString())
     const ownerInfo = bankAccounts.filter(account => account.owner === owner)?.[0]
     if (!ownerInfo) {
       throw new Error(`${owner}'s account not found`)

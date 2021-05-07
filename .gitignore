@@ -1,13 +1,9 @@
+# Typescript
+
 # Dependencies
 node_modules
-
-# Compiled output
+# Build directory
 *dist
-
-# env
-production.config.*
-.env
-
 # logs
 logs
 *.log
@@ -15,10 +11,25 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-
 # lock
 yarn.lock
 package-lock.json
+
+# Go
+
+*.sum
+# Dependencies
+vendor/
+
+# Rust
+
+# Build directory
+target
+# lock
+Cargo.lock
+
+# env
+.env
 
 # IDE - VSCode
 .vscode/*
