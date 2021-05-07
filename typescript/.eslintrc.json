@@ -57,7 +57,7 @@
       "always"
     ],
     "no-console": [
-      1
+      0
     ],
     "block-spacing": [
       2
@@ -75,7 +75,7 @@
     "@typescript-eslint/naming-convention": [
       1,
       {
-        "selector": "default",
+        "selector": "variable",
         "format": [
           "camelCase"
         ]
