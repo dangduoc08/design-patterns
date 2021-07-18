@@ -1,2 +1,3 @@
+// import './singleton'
 // import './observer'
-import './singleton'
+import './state'
