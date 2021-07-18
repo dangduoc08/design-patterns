@@ -1,3 +1,4 @@
-// import './singleton'
-// import './observer'
+import './singleton'
+import './builder'
 import './state'
+import './observer'

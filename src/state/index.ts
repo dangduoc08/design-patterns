@@ -12,6 +12,7 @@ import {
 } from './lazada'
 
 (function main() {
+  console.log('---***--- STATE PATTERN ---***---')
   const marketplaceContext = new Context()
 
   marketplaceContext.setState(new Tiki())
@@ -22,4 +23,6 @@ import {
 
   marketplaceContext.setState(new Lazada())
   marketplaceContext.applyState()
+  
+  console.log('')
 })()

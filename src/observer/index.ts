@@ -13,6 +13,7 @@ import {
 
 (async function main() {
   try {
+    console.log('---***--- OBSERVER PATTERN ---***---')
     const moneyService: MoneyService = MoneyService.getAccountInfomation('Jane Doe')
     const cashierObserver = new Cashier()
     const reporterObserver = new Reporter()
@@ -32,4 +33,6 @@ import {
   } catch (err) {
     console.error(err)
   }
+  
+  console.log('')
 })()
